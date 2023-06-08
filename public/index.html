@@ -13,34 +13,34 @@
   </head>
   <body class="bg-grey-300 overflow-x-hidden box-border">
     <!-- <div class=" bg-red-100"> -->
-    <header class="bg-white fixed w-full top-0 items-center z-10 lg:w-3/5">
+    <header class="bg-white fixed w-full top-0 z-10">
       <div
-        class="flex bg-white-100 justify-between p-2 pl-20 items-center w-full"
-      >
-        <div class="h-20 flex items-center justify-center -ml-10">
+        class="flex bg-white-100 justify-between  pl-20 pr-10 items-center w-full flex-auto lg:pl-0 md:pl-16">
+        <div class="h-20 flex items-center justify-center -ml-10 pl-8 md:pl-0 lg:pl-20">
           <button
             class="flex justify-center w-10 p-1 rounded-full hover:bg-gray-300"
           >
-            <i class="fa fa-bars text-2xl w-10"></i>
+            <i class="fa fa-bars text-2xl w-10 md:text-xs"></i>
           </button>
-          <img src="/images/download (2).png" alt="" class="w-30 h-20" />
+          <img src="/images/download (2).png" alt="" class="w-30 h-20 md:w-20 h-10" />
         </div>
-        <div class="">
+        <div class="flex">
           <input
             type="#"
             name="#"
             id="#"
-            class="w-9/12 p-2 border bg-grey-100 rounded-l-full sm:hidden w-0"
+            placeholder="search"
+            class=" p-2 border bg-grey-100 rounded-l-full flex-auto md:w-72 p-0  lg:w-72  sm:w-72"
           />
           <button
             type="button"
-            class="border bg-gray-300 p-2 w-14 hover:bg-gray-100 rounded-r-full -ml-1. sm:bg-white rounded-full"
+            class="border bg-gray-300 p-2 w-14 hover:bg-gray-100 rounded-r-full -ml-1 md:p-0 lg:p-2 sm:p-0"
           >
             <i class="fa fa-search"></i>
           </button>
           <button
             type="button"
-            class="border gray-300 p-2 w-10 rounded-full ease-in-out hover:bg-gray-300"
+            class=" gray-300 p-2 pr-2 w-10 rounded-full ease-in-out hover:bg-gray-300"
           >
             <i class="fa fa-microphone"></i>
           </button>
@@ -48,19 +48,19 @@
         <div class="text-sm">
           <button
             type="button"
-            class="border grey-400 p-2 w-10 rounded-full hover:bg-gray-300"
+            class="border grey-400 p-2 w-10 rounded-full hover:bg-gray-300 md:p-1 w-auto  border-none"
           >
             <i class="fa fa-video"></i>
           </button>
           <button
             type="button"
-            class="border grey-400 m-3 p-2 w-10 rounded-full hover:bg-gray-300"
+            class="border grey-400 m-3 p-2 w-10 rounded-full hover:bg-gray-300 md:p-1 w-auto border-none"
           >
             <i class="fa fa-bell"></i>
           </button>
           <button
             type="button"
-            class="border grey-400 p-2 w-10 rounded-full bg-blue-300"
+            class="border grey-400 p-2 w-10 rounded-full bg-blue-300 md:p-1 w-auto border-none"
           >
             <span class="p-2">a</span>
           </button>
@@ -207,30 +207,36 @@
     <aside
       class="fixed top-0 w-18 h-screen bg-white-100 flex items-center flex-col pt-6 z-10"
     >
-      <div class="mt-12 p-4 pb-3">
+      <div class="mt-12 p-4 pb-3 lg:p-4 md:p-2">
         <button
-          class="text-sm flex items-center justify-center mt-2 flex-col p-2 w-20 hover:bg-gray-300 rounded-md"
+          class="text-sm flex items-center justify-center mt-2 flex-col p-2 w-20 hover:bg-gray-300 rounded-md md:text-xs"
         >
-          <i class="fa fa-home text-xl"></i>
+          <i class="fa fa-home text-xl md:text-xs"></i>
           <span>home</span>
         </button>
 
         <button
-          class="text-sm flex items-center justify-center mt-2 flex-col pt-2 w-full hover:bg-gray-300 rounded-md"
+          class="text-sm flex items-center justify-center mt-2 flex-col pt-2 w-full hover:bg-gray-300 rounded-md md:text-xs"
         >
-          <i class="fa fa-bolt text-xl"></i>
+          <i class="fa fa-bolt text-xl md:text-xs"></i>
           <span>trending</span>
         </button>
 
         <button
-          class="text-sm flex flex-col justify-center mt-4 items-center pt-2 w-full hover:bg-gray-300 rounded-md"
+          class="text-sm flex flex-col justify-center mt-4 items-center pt-2 w-full hover:bg-gray-300 rounded-md md:text-xs"
         >
-          <i class="fa fa-arrows-alt text-xl"></i>
+          <i class="fa fa-arrows-alt text-xl md:text-xs"></i>
           <span>subscriptions</span>
         </button>
 
         <button
-          class="text-sm flex items-center mt-4 justify-center flex-col pt-2 w-full hover:bg-gray-300 rounded-md"
+          class="text-sm flex items-center mt-4 justify-center flex-col pt-2 w-full hover:bg-gray-300 rounded-md md:text-xs"
+        >
+          <i class="fa fa-fire text-xl"></i>
+          <span>library</span>
+        </button>
+        <button
+          class="text-sm flex items-center mt-4 justify-center flex-col pt-2 w-full hover:bg-gray-300 rounded-md md:text-xs"
         >
           <i class="fa fa-fire text-xl"></i>
           <span>library</span>
@@ -244,7 +250,7 @@
           recommended
         </h1>
         <div
-          class="grid grid-cols-3 gap-6 lg:grid-cols-2 lx:grid-cols-2 md:grid-cols-2 gap-3 sm:grid-cols-2 gap-1 xm:grid-cols-2 gap-1"
+          class="grid grid-cols-3 gap-6 md:grid-cols-2 lg:grid-cols-3"
         >
           <div class="">
             <div class=" overflow-hidden rounded-md">

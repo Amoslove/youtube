@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-  .ml{
-    @apply margin-left:2rem;
+@layer components{
+  input{
+    width: 600px;
+    align-items: center;
   }
 }
 

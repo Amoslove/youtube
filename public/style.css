@@ -629,6 +629,11 @@ video {
   }
 }
 
+input{
+  width: 600px;
+  align-items: center;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -31225,11 +31230,6 @@ video {
 
 .content-none {
   content: none;
-}
-
-.ml{
-  @apply. margin-left:18px
-  
 }
 
 @media (min-width: 640px) {
@@ -182481,3 +182481,5 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
+
